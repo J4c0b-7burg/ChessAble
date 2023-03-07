@@ -37,7 +37,7 @@ Ever made a brilliant move or got out of a terrible endgame and you wanted to sa
 
 #### Trello Board
 
-(Coming Soon)
+https://trello.com/invite/b/uLJK0pFf/ATTI05cb17e007805d67d156d8b0afcccc571F3BE39A/chessable
 
 ### Link to Rendered Project
 
