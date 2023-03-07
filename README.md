@@ -24,7 +24,7 @@ Ever made a brilliant move or got out of a terrible endgame and you wanted to sa
 ## Wireframes
 
 ![image](https://user-images.githubusercontent.com/113205902/223561433-0555e003-7331-49d9-abf2-bdcebf900fb0.png)
-
+![image](https://user-images.githubusercontent.com/113205902/223562297-c4362f64-791c-47da-9469-26093c5439ba.png)
 
 ## Daily Plan
 
