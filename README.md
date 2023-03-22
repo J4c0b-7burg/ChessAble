@@ -47,7 +47,7 @@ https://trello.com/invite/b/uLJK0pFf/ATTI05cb17e007805d67d156d8b0afcccc571F3BE39
 
 ### Link to Backend Repo and Rendered Backend
 
-(Coming Soon) - Repo
+https://github.com/J4c0b-7burg/ChessAble-Backend - Repo
 
 (Coming Soon) - Deployment
 
