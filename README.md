@@ -26,6 +26,10 @@ Ever made a brilliant move or got out of a terrible endgame and you wanted to sa
 
 
 ## Daily Plan
+![image](https://user-images.githubusercontent.com/113205902/223561433-0555e003-7331-49d9-abf2-bdcebf900fb0.png)
+![image](https://user-images.githubusercontent.com/113205902/223562297-c4362f64-791c-47da-9469-26093c5439ba.png)
+
+## Daily Plan
 
 | Day | Goal |
 |-----|------|
@@ -46,9 +50,9 @@ https://trello.com/invite/b/uLJK0pFf/ATTI05cb17e007805d67d156d8b0afcccc571F3BE39
 
 ### Link to Backend Repo and Rendered Backend
 
-(Coming Soon) - Repo
+https://github.com/J4c0b-7burg/ChessAble-Backend - Repo
 
-(Coming Soon) - Deployment
+https://chessable-backend.onrender.com - Deployment
 
 #### Routes
 
