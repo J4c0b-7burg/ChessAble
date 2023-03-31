@@ -11,7 +11,8 @@ const URL = "https://chessable-backend.onrender.com"
 // }
 
 export const createAction = async (request: any) => {
-    const formData = await request.formData()
+    console.log(request)
+    const formData = await request.request.formData()
 
     const newChess = {
         title: formData.get("title"),
@@ -35,9 +36,9 @@ export const createAction = async (request: any) => {
 }
 
 export const updateAction = async (request: any, params: any) => {
-    const formData = await request.formData()
+    const formData = await request.request.formData()
 
-    const id = params.id
+    const id = request.params.id
 
     const updatedChess = {
         title: formData.get("title"),
@@ -60,7 +61,7 @@ export const updateAction = async (request: any, params: any) => {
 }
 
 export const deleteAction = async (params: any) => {
-    const id = params.id
+    const id = params.params.id
 
     await fetch(URL + `/Chess/${id}/`, {
         method: "delete",

@@ -11,7 +11,7 @@ export const indexLoader = async () => {
 // }
 
 export const showLoader = async (params: any) => {
-    const response = await fetch(URL + `/Chess/${params.id}/`)
+    const response = await fetch(URL + `/Chess/${params.params.id}/`)
     const chess = await response.json()
     return chess
 }

@@ -27,7 +27,7 @@ const Index = (props: any) => {
   const chess: any = useLoaderData()
 
   return <>
-  <div>
+  <div className="main">
   <h2>Add Chess Game</h2>
   <Form action="/create" method="post">
       <input type="text" name="title" placeholder="write Tilte here"/>

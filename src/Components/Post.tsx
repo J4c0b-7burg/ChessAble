@@ -10,7 +10,8 @@ import { Link } from "react-router-dom";
 //   link: string;
 // }
 
-const Post = (post: any) => {
+const Post = (res: any) => {
+  let {post} = res;
   return (
     <div>
       <Link to={`/post/${post.id}`}>
@@ -22,7 +23,9 @@ const Post = (post: any) => {
       <img src={post.image} alt="placeholder"></img>
       </div>
       <h2>{post.notes}</h2>
-      <h2>{post.link}</h2>
+      <Link to={`${post.link}`}>
+        <h1>{post.link}</h1>
+      </Link>
     </div>
   );
 };

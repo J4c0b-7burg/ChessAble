@@ -10,8 +10,8 @@ import { Link, useLoaderData } from "react-router-dom";
 //   link: string;
 // }
 
-const Show = (post: any) => {
-  // const post = useLoaderData();
+const Show = (res: any) => {
+  let {post} = res;
 
   return (
     <div>

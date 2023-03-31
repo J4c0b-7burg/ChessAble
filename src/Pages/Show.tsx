@@ -10,20 +10,31 @@ import { Link, useLoaderData, Form } from "react-router-dom";
 //   link: string;
 // }
 
-const Show = (post: any) => {
-  // const post = useLoaderData();
-
+const Show = (res: any) => {
+  const post = useLoaderData();
+  console.log(post)
   return (
+    // @ts-ignore-console
     <div>
+      {/* @ts-ignore-console */}
+      { post && (<>
+      {/* @ts-ignore-console */}
       <h1>{post.title}</h1>
+      {/* @ts-ignore-console */}
       <h2>{post.type}</h2>
+      {/* @ts-ignore-console */}
       <h2>{post.date}</h2>
+      {/* @ts-ignore-console */}
       <div style={{width: "400px"}}>
+        {/* @ts-ignore-console */}
       <img src={post.image} alt="placeholder"></img>
       </div>
+      {/* @ts-ignore-console */}
       <h2>{post.notes}</h2>
+      {/* @ts-ignore-console */}
       <h2>{post.link}</h2>
       <div style={{ textAlign: "center" }}>
+        {/* @ts-ignore-console */}
         <Form action={`/update/${post.id}`} method="post">
           <input
             type="text"
@@ -63,6 +74,7 @@ const Show = (post: any) => {
           />
           <button>Update Chess</button>
         </Form>
+        {/* @ts-ignore-console */}
         <Form action={`/delete/${post.id}`} method="post">
           <button>Delete Chess</button>
         </Form>
@@ -70,6 +82,7 @@ const Show = (post: any) => {
       <Link to="/">
         <button>Go Back</button>
       </Link>
+      </>)}
     </div>
   );
 };
