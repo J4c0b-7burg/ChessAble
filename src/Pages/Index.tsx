@@ -2,29 +2,29 @@ import Post from "../Components/Post";
 import {useLoaderData} from "react-router-dom"
 import { Form } from "react-router-dom";
 
-interface ChessProps{
-  id: string;
-  title: string;
-  type: string;
-  date: string;
-  image: string;
-  notes: string;
-  link: string;
-}
+// interface ChessProps{
+//   id: string;
+//   title: string;
+//   type: string;
+//   date: string;
+//   image: string;
+//   notes: string;
+//   link: string;
+// }
 
-interface ChessPost{
-  id: string;
-  title: string;
-  type: string;
-  date: string;
-  image: string;
-  notes: string;
-  link: string;
-  key: string;
-}
+// interface ChessPost{
+//   id: string;
+//   title: string;
+//   type: string;
+//   date: string;
+//   image: string;
+//   notes: string;
+//   link: string;
+//   key: string;
+// }
 
-const Index = (props: ChessProps) => {
-  const chess = useLoaderData()
+const Index = (props: any) => {
+  const chess: any = useLoaderData()
 
   return <>
   <div>
@@ -39,7 +39,7 @@ const Index = (props: ChessProps) => {
       <button>Add Chess</button>
   </Form>
   </div>
-  {chess.map((post: ChessPost) => <Post post={post} key={post.id} />)}
+  {chess.map((post: any) => <Post post={post} key={post.id} />)}
   </>;
 };
 

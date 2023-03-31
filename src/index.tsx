@@ -4,6 +4,7 @@ import './index.css';
 import {RouterProvider} from "react-router-dom"
 import router from './router';
 
+// @ts-expect-error
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>

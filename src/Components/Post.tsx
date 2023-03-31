@@ -1,16 +1,16 @@
 import { Link } from "react-router-dom";
 
-interface ChessPost{
-  id: string;
-  title: string;
-  type: string;
-  date: string;
-  image: string;
-  notes: string;
-  link: string;
-}
+// interface ChessPost{
+//   id: string;
+//   title: string;
+//   type: string;
+//   date: string;
+//   image: string;
+//   notes: string;
+//   link: string;
+// }
 
-const Post = (post: ChessPost) => {
+const Post = (post: any) => {
   return (
     <div>
       <Link to={`/post/${post.id}`}>

@@ -1,16 +1,16 @@
 import { Link, useLoaderData } from "react-router-dom";
 
-interface ChessPost{
-  id: string;
-  title: string;
-  type: string;
-  date: string;
-  image: string;
-  notes: string;
-  link: string;
-}
+// interface ChessPost{
+//   id: string;
+//   title: string;
+//   type: string;
+//   date: string;
+//   image: string;
+//   notes: string;
+//   link: string;
+// }
 
-const Show = (post: ChessPost) => {
+const Show = (post: any) => {
   // const post = useLoaderData();
 
   return (

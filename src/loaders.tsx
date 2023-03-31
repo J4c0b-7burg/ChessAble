@@ -6,11 +6,11 @@ export const indexLoader = async () => {
     return chess
 }
 
-interface ChessParams{
-    id: string;
-}
+// interface ChessParams{
+//     id: string;
+// }
 
-export const showLoader = async (params: ChessParams) => {
+export const showLoader = async (params: any) => {
     const response = await fetch(URL + `/Chess/${params.id}/`)
     const chess = await response.json()
     return chess

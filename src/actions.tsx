@@ -2,15 +2,15 @@ import { redirect } from "react-router-dom"
 
 const URL = "https://chessable-backend.onrender.com"
 
-interface ChessParams{
-    id: string;
-}
+// interface ChessParams{
+//     id: string;
+// }
 
-interface ChessRequest{
-    formData: any;
-}
+// interface ChessRequest{
+//     formData: any;
+// }
 
-export const createAction = async (request: ChessRequest) => {
+export const createAction = async (request: any) => {
     const formData = await request.formData()
 
     const newChess = {
@@ -34,7 +34,7 @@ export const createAction = async (request: ChessRequest) => {
     return redirect("/")
 }
 
-export const updateAction = async (request: ChessRequest, params: ChessParams) => {
+export const updateAction = async (request: any, params: any) => {
     const formData = await request.formData()
 
     const id = params.id
@@ -59,7 +59,7 @@ export const updateAction = async (request: ChessRequest, params: ChessParams) =
     return redirect(`/post/${id}`)
 }
 
-export const deleteAction = async (params: ChessParams) => {
+export const deleteAction = async (params: any) => {
     const id = params.id
 
     await fetch(URL + `/Chess/${id}/`, {

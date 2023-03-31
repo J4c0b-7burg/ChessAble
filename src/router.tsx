@@ -16,7 +16,11 @@ import {
           <Route path="" element={<Index/>} loader={indexLoader} />
           <Route path="post/:id" element={<Show/>} loader={showLoader} />
           <Route path="create" action={createAction}/>
-          <Route path="update/:id" action={updateAction}/>
+          <Route 
+            path="update/:id" 
+            /* @ts-ignore */
+            action={updateAction}
+          />
           <Route path="delete/:id" action={deleteAction}/>
         </Route>
       </>
