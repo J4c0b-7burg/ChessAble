@@ -1,14 +1,6 @@
-import { Link, useLoaderData, Form } from "react-router-dom";
+// @ts-nocheck
 
-// interface ChessPost{
-//   id: string;
-//   title: string;
-//   type: string;
-//   date: string;
-//   image: string;
-//   notes: string;
-//   link: string;
-// }
+import { Link, useLoaderData, Form } from "react-router-dom";
 
 const Show = (res: any) => {
   const post = useLoaderData();
@@ -16,25 +8,16 @@ const Show = (res: any) => {
   return (
     // @ts-ignore-console
     <div>
-      {/* @ts-ignore-console */}
       { post && (<>
-      {/* @ts-ignore-console */}
       <h1>{post.title}</h1>
-      {/* @ts-ignore-console */}
       <h2>{post.type}</h2>
-      {/* @ts-ignore-console */}
       <h2>{post.date}</h2>
-      {/* @ts-ignore-console */}
       <div style={{width: "400px"}}>
-        {/* @ts-ignore-console */}
       <img src={post.image} alt="placeholder"></img>
       </div>
-      {/* @ts-ignore-console */}
       <h2>{post.notes}</h2>
-      {/* @ts-ignore-console */}
       <h2>{post.link}</h2>
       <div style={{ textAlign: "center" }}>
-        {/* @ts-ignore-console */}
         <Form action={`/update/${post.id}`} method="post">
           <input
             type="text"
@@ -74,7 +57,6 @@ const Show = (res: any) => {
           />
           <button>Update Chess</button>
         </Form>
-        {/* @ts-ignore-console */}
         <Form action={`/delete/${post.id}`} method="post">
           <button>Delete Chess</button>
         </Form>
