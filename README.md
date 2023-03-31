@@ -46,7 +46,7 @@ https://trello.com/invite/b/uLJK0pFf/ATTI05cb17e007805d67d156d8b0afcccc571F3BE39
 
 ### Link to Rendered Project
 
-(Coming Soon)
+https://chessable.onrender.com
 
 ### Link to Backend Repo and Rendered Backend
 
